@@ -1,44 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
-    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/devaria.css"/>
+    <link rel="stylesheet" href="public/css/footer.css"/>
+    <link rel="stylesheet" href="public/css/header.css"/>
+    <link rel="stylesheet" href="public/css/fale-conosco.css"/>
 </head>
 <body>
     <header>
-        <h1> Cardoso Soluções</h1>
-        <nav>
+        <a href="index.html" class="link-logo">
+            <img src="public/fotos/logo-devaria.svg" alt="logo Devaria">
+        </a>
+        <nav class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="professores.html">Socios</a></li>
                 <li><a href="faleconosco.html">Fale Conosco</a></li>       
                 <li><a href="devstar.html"> Dev Star</li>         
             </ul>
         </nav>
+    </header>
         <main>
-            <h2>Para entrar em contato preencha os campos abaixo</h2>
-            <section>
-                <form action="index.html">
-                    <p>
-                        <label>Nome :</label><input type="text" name="Nome" maxlength="70"/>
-                    </p>
-                    <p>
-                        <label>E-mail:</label><input type="text" name="Email" maxlength="150"/>
-                    </p>
-                    <p>
-                        <label>Comentário:</label>
-                        <textarea name="Comentario" rows="4" cols="50"></textarea>
-                    </p>
-                    
-                    <p>
-                        <label>Sexo:</label>
-                        <input type="radio" name="Sexo"/><label>Feminino</label>
-                        <input type="radio" name="Sexo"/><label>Masculino</label>
-                    </p>
-                    <p>
+            <h1 class="title text-center">Fale com a Devaria através dessa página</h1>
+            <h2 class="sub-title text-center">Para entrar em contato preencha os campos abaixo</h2>
+            <form action="index.html" class="contact-form margin-horizontal-20px">
+                <div>
+                    <label>Nome :</label>
+                    <input type="text" name="Nome" maxlength="70" required="true"/>
+                </div>
+                <div>
+                    <label>E-mail:</label>
+                    <input type="text" name="Email" maxlength="150" required="true"/>             
+                </div>
+                <div>
+                    <label>Comentário:</label>
+                    <textarea name="Comentario" rows="4" cols="50"></textarea>
+                </div>
+                <div>
+                    <label>Sexo:</label>
+                    <input type="radio" name="Sexo"/><label>Feminino</label>
+                    <input type="radio" name="Sexo"/><label>Masculino</label>
+                </div>
+                <div>
                         <label>Aonde nos conheceu?</label>
                         <select name="Conheceu">
                             <option selected>YouTube</option>
@@ -46,14 +52,16 @@
                             <option>Amigos</option>
                             <option>outros</option>
                         </select>
-                    </p>
-                    <p>
-                        <input type="CheckBox" name="Novidades" value="Aceite"/>
+                </div>
+                    <div>
+                        <input type="checkbox" name="Novidades" value="Aceite"/>
                         <label>Aceito receber e-mails de novidades</label>
-                    </p>
-                    <center><button>Enviar</button><input type="reset"></center>
+                    </div>
+                    <div>
+                        <input type="submit" name="Enviar" value="Enviar" />
+                        <input type="reset" nema="Limpar" value="Limpar" />
+                    </div>
                 </form>
-            </section>
         </main>
         <footer>
             <section>
